@@ -1,97 +1,119 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📱 Projeto Mobile - Controle de Serviços
 
-# Getting Started
+Este projeto foi desenvolvido em **React Native com Expo**, com o objetivo de rodar em dispositivos móveis (Android/iOS).  
+O aplicativo permite registrar serviços com **controle de tempo**, técnico responsável e local, além de exibir um histórico dos últimos atendimentos.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 🚀 Tecnologias utilizadas
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- [React Navigation](https://reactnavigation.org/)
+- [WorldTimeAPI](https://worldtimeapi.org/) (para sincronização de horário)
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
-npm start
+## 📋 Pré-requisitos
 
-# OR using Yarn
-yarn start
+- [Node.js](https://nodejs.org/) (versão LTS recomendada)  
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)  
+- [Git](https://git-scm.com/)  
+
+E no celular:  
+- App **Expo Go** (Play Store / App Store)
+
+---
+
+## ⚙️ Instalação
+
+Clone o repositório e entre na pasta do projeto:
+```bash
+git clone https://github.com/michelly-wilges/ProjetoDeBloco25.git
+cd ProjetoDeBloco25
 ```
 
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+Instale as dependências:
+```bash
+npm install
 ```
 
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+Inicie o projeto:
+```bash
+npx expo start
 ```
 
-Then, and every time you update your native dependencies, run:
+---
 
-```sh
-bundle exec pod install
-```
+## 📱 Como usar
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+1. **Execute o comando** `npx expo start`
+2. **Abra o app Expo Go** no seu celular
+3. **Escaneie o QR Code** que aparece no terminal
+4. **O app será carregado** no seu dispositivo
 
-```sh
-# Using npm
-npm run ios
+---
 
-# OR using Yarn
-yarn ios
-```
+## 🎯 Funcionalidades
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+- [x] Registro de serviços com controle de tempo
+- [x] Cadastro de técnico responsável
+- [x] Definição de local do atendimento
+- [x] Histórico dos últimos atendimentos
+- [x] Sincronização de horário com WorldTimeAPI
+- [x] Interface mobile responsiva
+- [ ] Relatórios de produtividade
+- [ ] Sistema de notificações
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+---
 
-## Step 3: Modify your app
+## 📸 Demonstração
 
-Now that you have successfully run the app, let's make changes!
+![Tela1](https://github.com/user-attachments/assets/e0e4628d-0ef1-48fd-aa0f-ab5c303b8249)
+![Tela2](https://github.com/user-attachments/assets/fc67be62-8e37-4c4d-a22a-34b244a34f75)
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+---
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## 🌐 APIs utilizadas
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+- **WorldTimeAPI**: Para sincronização precisa de horário nos registros de serviço
+- **ReqRes API**: Para sistema de autenticação e login (`https://reqres.in/api/login`)
 
-## Congratulations! :tada:
+---
 
-You've successfully run and modified your React Native App. :partying_face:
+## 🚧 Status do Projeto
 
-### Now what?
+✅ **Em produção** - O projeto está funcional e sendo usado.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+---
 
-# Troubleshooting
+## 🔧 Como Contribuir
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+1. Faça um **fork** do projeto
+2. Crie uma branch para sua feature:
+   ```bash
+   git checkout -b feature/nova-feature
+   ```
+3. Commit suas mudanças:
+   ```bash
+   git commit -m 'Adiciona nova feature'
+   ```
+4. Push para a branch:
+   ```bash
+   git push origin feature/nova-feature
+   ```
+5. Abra um **Pull Request**
 
-# Learn More
+---
 
-To learn more about React Native, take a look at the following resources:
+## 📝 Licença
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 👤 Autor
+
+**Michelly Wilges**
+- GitHub: [@michelly-wilges](https://github.com/michelly-wilges)
+- Email: michellyvg@yahoo.com.br
